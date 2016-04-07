@@ -8,8 +8,8 @@ Follow these guidelines if you'd like to contribute to the project!
 
 Read through these guidelines before you get started:
 
-1. [Questions & Concerns](#questions-&-concerns)
-2. [Issues & Bugs](#issues-&-bugs)
+1. [Questions & Concerns](#questions--concerns)
+2. [Issues & Bugs](#issues--bugs)
 3. [Feature Requests](#feature-requests)
 4. [Submitting Pull Requests](#submitting-pull-requests)
 5. [Code Style](#code-style)

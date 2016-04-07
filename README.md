@@ -7,14 +7,11 @@ feature; based on popular repositories like Angular.js and Atom.
 
 ### Adding templates to your project
 
-Use git's submodules feature: first `cd` to your root project folder and then:
+Simply download the needed files by running this from your root project folder:
 
 ```sh
-$ git submodule add https://github.com/tylucaskelley/github-templates .github
+$ curl -sO https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh | bash
 ```
-
-For more on working with submodules, see the
-[official docs](https://git-scm.com/book/en/v2/Git-Tools-Submodules)!
 
 ### Modifying template files
 

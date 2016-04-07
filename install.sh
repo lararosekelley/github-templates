@@ -18,7 +18,7 @@ files=(
 )
 
 for file in "${files[@]}"; do
-    curl -sO "${url}/${file}" -o ".github/${file}"
+    curl -so ".github/${file}" "${url}/${file}"
 done
 
 echo "done! files saved in '.github' folder."

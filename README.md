@@ -10,7 +10,7 @@ feature; based on popular repositories like Angular.js and Atom.
 Simply download the needed files by running this from your root project folder:
 
 ```sh
-$ curl -sO https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh | bash
+$ bash <(curl -sO https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh)
 ```
 
 ### Modifying template files

@@ -47,6 +47,12 @@ done
 
 shift "$((OPTIND-1))" && [ "$1" = "--" ] && shift # shift off options
 
+# exit if missing args
+
+if [[ -z $user || -z $email || -z $repo ]]; then
+    echo "fatal: missing required arguments" && exit 1
+fi
+
 # read files and populate w/ command line args
 
 src=$(dirname "$(readlink -f ${BASH_SOURCE[0]})")

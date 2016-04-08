@@ -49,7 +49,7 @@ to ensure you aren't duplicating anyone's work. Then, do the following:
 3. Make sure your feature or fix doesn't break the project! Test thoroughly.
 4. Commit your changes, and be sure to leave a detailed commit message.
 5. Push your branch to your forked repo on GitHub: `git push origin my-branch`
-6. [Submit a pull request][2] and hold tight!
+6. [Submit a pull request][3] and hold tight!
 7. If any changes are requested by the project maintainers, make them and follow
 this process again until the changes are merged.
 

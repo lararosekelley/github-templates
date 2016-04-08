@@ -13,6 +13,15 @@ Simply download the needed files by running this from your root project folder:
 $ bash <(curl -s https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh)
 ```
 
+What I've done on my own computer is create a git alias to handle this, so I can simply run `git tpl`.
+Inside your `~/.gitconfig` file, put this under the `[alias]` section:
+
+```sh
+tpl = "!f() { curl -s https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh | bash; }; f"
+```
+
+Now you can run `git tpl` from a project folder to get the needed files!
+
 ### Modifying template files
 
 To fill in your project info, simply run the provided `generate.sh` script

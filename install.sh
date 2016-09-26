@@ -3,23 +3,6 @@
 # installs github template files
 # ----------
 
-# usage prompt
-
-read -r -d '' usage << EOF
-usage: bash install.sh [-h] -u username -e email -r repository
-
-installs github template files and substitutes placeholder text for
-actual user info
-
-required arguments:
-    -u username (github username)
-    -e email (email address)
-    -r repository name (github repository name)
-
-optional arguments
-    -h (displays this message)
-EOF
-
 # download files
 
 echo "downloading template files..."
@@ -37,38 +20,14 @@ done
 
 # prompt user for name, email, and project repo
 
-user=""
-email=""
-repo=""
+echo -n "Enter your name: "
+read -r user
 
-OPTIND=1 # reset getopts in case it was used before
+echo -n "Enter your email address: "
+read -r email
 
-while getopts ":u:e:r:h?" opt; do
-    case "$opt" in
-        u) user=$OPTARG
-            ;;
-        e) email=$OPTARG
-            ;;
-        r) repo=$OPTARG
-            ;;
-
-        # error handling and help
-
-        h|\?) echo "$usage" && exit 0
-            ;;
-
-        :) echo "fatal: option -$OPTARG requires an argument" && exit 1
-            ;;
-    esac
-done
-
-shift "$((OPTIND-1))" && [ "$1" = "--" ] && shift # shift off options
-
-# exit if missing args
-
-if [[ -z $user || -z $email || -z $repo ]]; then
-    echo "$usage" && exit 1
-fi
+echo -n "Enter the repository name: "
+read -r repo
 
 # read files and populate w/ command line args
 
@@ -77,6 +36,8 @@ files=(
     ".github/ISSUE_TEMPLATE.md"
     ".github/PULL_REQUEST_TEMPLATE.md"
 )
+
+echo "populating files with provided info..."
 
 for f in "${files[@]}"; do
     if [ -f "$f" ]; then

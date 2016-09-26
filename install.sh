@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # installs github template files
-# ----------
+# --------
 
 # download files
 
@@ -14,37 +14,22 @@ files=(
     "PULL_REQUEST_TEMPLATE.md"
 )
 
+mkdir -p .github
+
 for file in "${files[@]}"; do
     curl -so ".github/${file}" "${url}/${file}"
 done
 
 # prompt user for name, email, and project repo
 
-echo -n "Enter your name: "
-read -r user
-
-echo -n "Enter your email address: "
-read -r email
-
-echo -n "Enter the repository name: "
-read -r repo
+echo -n "enter your username: " && read -r user
+echo -n "enter your email address: " && read -r email
+echo -n "enter the repository name: " && read -r repo
 
 # read files and populate w/ command line args
 
-files=(
-    ".github/CONTRIBUTING.md"
-    ".github/ISSUE_TEMPLATE.md"
-    ".github/PULL_REQUEST_TEMPLATE.md"
-)
-
 echo "populating files with provided info..."
 
-for f in "${files[@]}"; do
-    if [ -f "$f" ]; then
-        sed -i -e "s/{user}/${user}/g" "$f"
-        sed -i -e "s/{email}/${email}/g" "$f"
-        sed -i -e "s/{repo}/${repo}/g" "$f"
-    fi
-done
+find .github -type f -exec sed -i '' "s/{user}/${user}/g; s/{repo}/${repo}/g; s/{email}/${email}/g" {} +
 
 echo "done! files saved in '.github' folder."

@@ -1,6 +1,7 @@
 # Submit a feature request or bug report
 
-Replace any "X" with your information.
+Replace any "X" with your information. Before you submit an issue,
+check to see if this issue has [already been reported][1].
 
 ---
 
@@ -31,3 +32,5 @@ X
 ### Other relevant information:
 
 X
+
+[1]: https://github.com/{user}/{repo}/issues

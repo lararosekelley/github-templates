@@ -21,8 +21,9 @@ tpl = "!f() { curl -s https://raw.githubusercontent.com/tylucaskelley/github-tem
 ```
 
 Now you can run `git tpl` from a project folder to get the needed files!
+You'll be prompted for your username, email address, and repository name.
 
 The only thing left to do is to scroll to the "Code Style" section in
-`CONTRIBUTING.md` and add your own guidelines. That's all there is to it! You
-may also want to consider deleting the `generate.sh` and `README.md` files to
-save some space and remove clutter.
+`CONTRIBUTING.md` and add your own guidelines. That's all there is to it!
+You may also want to consider deleting the `generate.sh` and `README.md`
+files to save some space and remove clutter.

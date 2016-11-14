@@ -3,6 +3,8 @@
 Replace any "X" with your information. Before you submit an issue,
 check to see if this issue has [already been reported][1].
 
+Any questions should be directed to @tylucaskelley.
+
 ---
 
 ### Is this a request for a feature or a bug report?

@@ -1,13 +1,16 @@
 # Submit a pull request
 
-Replace any "X" with your information. Please check the boxes below to confirm
-that your pull request meets the requirements:
+Replace any "X" below to describe your changes. Please check the boxes here by
+inserting an "x" to confirm that your pull request meets the requirements:
 
 - [ ] This pull request isn't a duplicate of an [existing one][1]
+- [ ] No existing features have been broken
 - [ ] Commit messages are detailed
-- [ ] The code style guidelines have been followed
+- [ ] The [code style guidelines][2] have been followed
 - [ ] Documentation has been updated to reflect changes
 - [ ] Tests have been added / updated to reflect changes
+
+Any questions should be directed to @tylucaskelley.
 
 ---
 
@@ -23,8 +26,9 @@ X
 
 X
 
-### Other information:
+### Other relevant information:
 
 X
 
 [1]: https://github.com/tylucaskelley/github-templates/pulls
+[2]: https://github.com/tylucaskelley/github-templates/blob/master/.github/CONTRIBUTING.md#code-style

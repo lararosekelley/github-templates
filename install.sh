@@ -33,3 +33,4 @@ echo "populating files with provided info..."
 find .github -type f -exec sed -i '' "s/{user}/${user}/g; s/{repo}/${repo}/g; s/{email}/${email}/g" {} +
 
 echo "done! files saved in '.github' folder."
+echo "don't forget to add your repository's code style guidelines to CONTRIBUTING.md"

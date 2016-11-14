@@ -57,7 +57,8 @@ this process again until the changes are merged in.
 
 Please follow the coding style conventions detailed below:
 
-{guidelines}
+1. All Markdown must be valid and easy to understand.
+2. Use `shellcheck` if making changes to the installation script.
 
 [1]: mailto:tylucaskelley@gmail.com
 [2]: https://github.com/tylucaskelley/github-templates/issues/new

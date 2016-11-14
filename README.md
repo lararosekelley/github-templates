@@ -20,10 +20,12 @@ Inside your `~/.gitconfig` file, put this under the `[alias]` section:
 tpl = "!f() { bash -c \"$(curl -s https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh)\"; }; f"
 ```
 
-Now you can run `git tpl` from a project folder to get the needed files!
+Now you can run `git tpl` from a project's base folder to get the needed files!
 You'll be prompted for your username, email address, and repository name.
 
+### Adding code style guidelines
+
 The only thing left to do is to scroll to the "Code Style" section in
-`CONTRIBUTING.md` and add your own guidelines. That's all there is to it!
-You may also want to consider deleting the `generate.sh` and `README.md`
-files to save some space and remove clutter.
+`CONTRIBUTING.md` and replace the {guidelines} section with your own guidelines.
+That's all there is to it! You may also want to consider deleting the
+`generate.sh` and `README.md` files to save some space and remove clutter.

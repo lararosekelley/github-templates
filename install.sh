@@ -22,9 +22,9 @@ done
 
 # prompt user for name, email, and project repo
 
-echo -n "enter your username: " && read -r user
+echo -n "enter your github username: " && read -r user
 echo -n "enter your email address: " && read -r email
-echo -n "enter the repository name: " && read -r repo
+echo -n "enter the github repository name: " && read -r repo
 
 # read files and populate w/ command line args
 

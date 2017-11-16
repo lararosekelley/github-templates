@@ -3,10 +3,12 @@
 # installs github template files
 # --------
 
-# download files
+# variables
 
-echo "downloading template files..."
-
+red="\e[0;31m"
+green="\e[0;32m"
+reset="\e[0m"
+check="\xE2\x9C\x94"
 url="https://raw.githubusercontent.com/tylucaskelley/github-templates/master"
 files=(
     "CONTRIBUTING.md"
@@ -14,23 +16,34 @@ files=(
     "PULL_REQUEST_TEMPLATE.md"
 )
 
+# create .github folder
+
 mkdir -p .github
+
+echo -e "Creating .github folder... ${green}done ${check}${reset}"
+
+# download template files
 
 for file in "${files[@]}"; do
     curl -so ".github/${file}" "${url}/${file}"
 done
 
+echo -e "Downloading template files... ${green}done ${check}${reset}"
+
 # prompt user for name, email, and project repo
 
-echo -n "enter your github username: " && read -r user
-echo -n "enter your email address: " && read -r email
-echo -n "enter the github repository name: " && read -r repo
+echo -ne "Repository name: " && read -r repo
+echo -ne "Repository owner's username: " && read -r owner
+echo -ne "Primary contact's username: " && read -r user
+echo -ne "Primary contact's email address: " && read -r email
 
 # read files and populate w/ command line args
 
-echo "populating files with provided info..."
+find .github -type f -exec sed -i '' "s/{owner}/${owner}/g; s/{user}/${user}/g; s/{repo}/${repo}/g; s/{email}/${email}/g" {} +
 
-find .github -type f -exec sed -i '' "s/{user}/${user}/g; s/{repo}/${repo}/g; s/{email}/${email}/g" {} +
+echo -e "Adding provided information to template files... ${green}done ${check}${reset}\n"
 
-echo "done! files saved in '.github' folder."
-echo "don't forget to add your repository's code style guidelines to CONTRIBUTING.md"
+# all done
+
+echo "Template files downloaded and populated with provided information."
+echo -e "Don't forget to add your code style guidelines to ${red}CONTRIBUTING.md${reset}"

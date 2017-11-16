@@ -1,34 +1,45 @@
 # Submit a pull request
 
-Replace any "X" below to describe your changes. Please check the boxes here by
-inserting an "x" to confirm that your pull request meets the requirements:
+Thank you for submitting a pull request! To speed up the review process, please ensure that everything below
+is true:
 
-- [ ] This pull request isn't a duplicate of an [existing one][1]
-- [ ] No existing features have been broken
-- [ ] Commit messages are detailed
-- [ ] The [code style guidelines][2] have been followed
-- [ ] Documentation has been updated to reflect changes
-- [ ] Tests have been added / updated to reflect changes
+1. This is not a duplicate of an [existing pull request][1].
+2. No existing features have been broken without good reason.
+3. Your commit messages are detailed
+4. The code style [guidelines][2] have been followed.
+5. Documentation has been updated to reflect your changes.
+6. Tests have been added or updated to reflect your changes.
+7. All tests pass.
 
 Any questions should be directed to @{user}.
 
 ---
 
-### What changes does this pull request make?
+Replace any ":question:" below with information about your pull request.
 
-X
+## Pull Request Details
 
-### What is the current behavior?
+Provide details about your pull request and what it adds, fixes, or changes.
 
-X
+:question:
 
-### Does this pull request introduce any breaking changes?
+## Breaking Changes
 
-X
+Describe what features are broken by this pull request and why, if any.
 
-### Other relevant information:
+:question:
 
-X
+## Issues Fixed
 
-[1]: https://github.com/{user}/{repo}/pulls
-[2]: https://github.com/{user}/{repo}/blob/master/.github/CONTRIBUTING.md#code-style
+Enter the issue numbers resolved by this pull request below, if any.
+
+1. :question:
+
+## Other Relevant Information
+
+Provide any other important details below.
+
+:question:
+
+[1]: https://github.com/{owner}/{repo}/pulls
+[2]: https://github.com/{owner}/{repo}/blob/master/.github/CONTRIBUTING.md#code-style

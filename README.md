@@ -1,11 +1,10 @@
 # GitHub Templates
 
-Starter files for GitHub's issue, pull request, and contributing templates
-feature; based on popular repositories like Angular.js and Atom.
+Good template for GitHub's ISSUE_TEMPLATE.md, CONTRIBUTING.md, and PULL_REQUEST_TEMPLATE.md files.
 
 ---
 
-### Adding templates to your project
+## Installation
 
 Simply download the needed files by running this from your root project folder:
 
@@ -23,9 +22,7 @@ tpl = "!f() { bash -c \"$(curl -s https://raw.githubusercontent.com/tylucaskelle
 Now you can run `git tpl` from a project's base folder to get the needed files!
 You'll be prompted for your username, email address, and repository name.
 
-### Adding code style guidelines
+## Code Style
 
-The only thing left to do is to scroll to the "Code Style" section in
-`CONTRIBUTING.md` and replace the {guidelines} section with your own guidelines.
-That's all there is to it! You may also want to consider deleting the
-`generate.sh` and `README.md` files to save some space and remove clutter.
+You should replace the `{guidelines}` section in CONTRIBUTING.md with your own code style guidelines after
+installation.

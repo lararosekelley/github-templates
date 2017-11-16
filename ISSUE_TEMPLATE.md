@@ -1,38 +1,34 @@
 # Submit a feature request or bug report
 
-Replace any "X" with your information. Before you submit an issue,
-check to see if this issue has [already been reported][1].
-
+Before you submit an issue, check to see if it has [already been reported][1].
 Any questions should be directed to @{user}.
 
 ---
 
-### Is this a request for a feature or a bug report?
+Replace any ":question:" below with your information.
 
-X
+## Development Environment
 
-### What is the current behavior?
+- Operating system: :question:
+- Browser: :question:
+- Project version: :question:
 
-X
+## Current Behavior
 
-### If this is a bug report, please provide steps to reproduce:
+:question:
 
-X
+## Expected Behavior
 
-### What is the expected or desired behavior?
+:question:
 
-X
+## Steps to Reproduce
 
-### Please provide use cases for changing the current behavior:
+Only fill this in if you are filing a bug report.
 
-X
+1. :question:
 
-### Please describe your development environment (OS, browser, etc.):
+## Other Relevant Information
 
-X
+:question:
 
-### Other relevant information:
-
-X
-
-[1]: https://github.com/{user}/{repo}/issues
+[1]: https://github.com/{owner}/{repo}/issues

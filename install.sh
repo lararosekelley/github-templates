@@ -28,7 +28,7 @@ for file in "${files[@]}"; do
     curl -so ".github/${file}" "${url}/${file}"
 done
 
-echo -e "Downloading template files... ${green}done ${check}${reset}"
+echo -e "Downloading template files... ${green}done ${check}${reset}\n"
 
 # prompt user for name, email, and project repo
 
@@ -41,9 +41,9 @@ echo -ne "Primary contact's email address: " && read -r email
 
 find .github -type f -exec sed -i '' "s/{owner}/${owner}/g; s/{user}/${user}/g; s/{repo}/${repo}/g; s/{email}/${email}/g" {} +
 
-echo -e "Adding provided information to template files... ${green}done ${check}${reset}\n"
+echo -e "\nAdding provided information to template files... ${green}done ${check}${reset}\n"
 
 # all done
 
-echo "Template files downloaded and populated with provided information."
+echo "Template files downloaded and populated with provided information!"
 echo -e "Don't forget to add your code style guidelines to ${red}CONTRIBUTING.md${reset}"

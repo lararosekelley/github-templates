@@ -1,6 +1,6 @@
 # GitHub Templates
 
-Good template for GitHub's ISSUE_TEMPLATE.md, CONTRIBUTING.md, and PULL_REQUEST_TEMPLATE.md files.
+> Good template for GitHub's ISSUE_TEMPLATE.md, CONTRIBUTING.md, and PULL_REQUEST_TEMPLATE.md files.
 
 ---
 
@@ -20,9 +20,18 @@ tpl = "!f() { bash -c \"$(curl -s https://raw.githubusercontent.com/tylucaskelle
 ```
 
 Now you can run `git tpl` from a project's base folder to get the needed files!
-You'll be prompted for your username, email address, and repository name.
+You'll be prompted for your username, email address, and repository name - you can leave
+the defaults if they look correct (inferred from `git config` variables).
 
-## Code Style
+## Adding your code style guidelines
 
-You should replace the `{guidelines}` section in CONTRIBUTING.md with your own code style guidelines after
-installation.
+You should replace the `{guidelines}` section in CONTRIBUTING.md with your own
+code style guidelines after installation.
+
+## Contributing
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+
+## License
+
+Copyright (c) 2017-2018 Ty-Lucas Kelley. MIT License.

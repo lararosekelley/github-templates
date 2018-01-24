@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1117
 
 # installs github template files
 # --------
@@ -30,12 +31,27 @@ done
 
 echo -e "Downloading template files... ${green}done ${check}${reset}\n"
 
+# defaults from current directory and git config
+
+repo_default="$(basename "$(git rev-parse --show-toplevel)")"
+owner_contact_default="$(git config user.email | cut -d '@' -f 1)"
+email_default="$(git config user.email)"
+
 # prompt user for name, email, and project repo
 
-echo -ne "Repository name: " && read -r repo
-echo -ne "Repository owner's username: " && read -r owner
-echo -ne "Primary contact's username: " && read -r user
-echo -ne "Primary contact's email address: " && read -r email
+echo -e "Enter information (leave blank for defaults):\n"
+
+echo -ne "Repository name (${repo_default}): " && read -r repo_input
+echo -ne "Repository owner's username (${owner_contact_default}): " && read -r owner_input
+echo -ne "Primary contact's username (${owner_contact_default}): " && read -r user_input
+echo -ne "Primary contact's email address (${email_default}): " && read -r email_input
+
+# set to input or default values
+
+repo=${repo_input:-$repo_default}
+owner=${owner_input:-$owner_contact_default}
+user=${user_input:-$owner_contact_default}
+email=${email_input:-$email_default}
 
 # read files and populate w/ command line args
 
@@ -45,5 +61,5 @@ echo -e "\nAdding provided information to template files... ${green}done ${check
 
 # all done
 
-echo "Template files downloaded and populated with provided information!"
+echo "Template files downloaded and populated with provided information."
 echo -e "Don't forget to add your code style guidelines to ${red}CONTRIBUTING.md${reset}"

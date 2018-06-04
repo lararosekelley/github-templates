@@ -5,30 +5,32 @@ Any questions should be directed to @{user}.
 
 ---
 
-Replace any ":question:" below with your information.
+Replace any "X" below with your information.
 
-## Development Environment
+## Development environment
 
-- Operating system: :question:
-- Browser: :question:
-- Project version: :question:
+- Operating system: X
+- Browser: X
+- Software version: X
 
-## Current Behavior
+## Current behavior
 
-:question:
+Include screenshots if possible.
 
-## Expected Behavior
+X
 
-:question:
+## Expected behavior
 
-## Steps to Reproduce
+X
+
+## Steps to reproduce
 
 Only fill this in if you are filing a bug report.
 
-1. :question:
+1. X
 
-## Other Relevant Information
+## Other relevant information
 
-:question:
+X
 
 [1]: https://github.com/{owner}/{repo}/issues

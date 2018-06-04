@@ -12,21 +12,25 @@ Simply download the needed files by running this from your root project folder:
 $ bash -c "$(curl -s https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh)"
 ```
 
-What I've done on my own computer is create a git alias to handle this, so I can simply run `git tpl`.
-Inside your `~/.gitconfig` file, put this under the `[alias]` section:
+For convenience, you can create a Git alias in your `~/.gitconfig` file. Under the `[alias]` section, add the following
+so you can run `git tpl` to generate your template files:
 
 ```sh
 tpl = "!f() { bash -c \"$(curl -s https://raw.githubusercontent.com/tylucaskelley/github-templates/master/install.sh)\"; }; f"
 ```
 
-Now you can run `git tpl` from a project's base folder to get the needed files!
-You'll be prompted for your username, email address, and repository name - you can leave
-the defaults if they look correct (inferred from `git config` variables).
+When you run `git tpl`, you'll be prompted for your username, email address, and repository name - you can leave the
+defaults if they look correct (inferred from `git config` variables).
 
 ## Adding your code style guidelines
 
-You should replace the `{guidelines}` section in CONTRIBUTING.md with your own
-code style guidelines after installation.
+You should replace the `{guidelines}` section in [CONTRIBUTING.md](CONTIRBUTING.md) with your own code style guidelines
+after installation.
+
+## Adding your Git workflow
+
+[CONTRIBUTING.md](CONTIRBUTING.md#submitting-pull-requests) assumes a forking / feature-branch workflow for making
+contributions to your repository; edit this if your project requires a different flow.
 
 ## Contributing
 

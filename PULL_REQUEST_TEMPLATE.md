@@ -5,41 +5,41 @@ is true:
 
 1. This is not a duplicate of an [existing pull request][1].
 2. No existing features have been broken without good reason.
-3. Your commit messages are detailed
+3. Your commit messages are detailed.
 4. The code style [guidelines][2] have been followed.
 5. Documentation has been updated to reflect your changes.
 6. Tests have been added or updated to reflect your changes.
-7. All tests pass.
+7. All tests have passed.
 
 Any questions should be directed to @{user}.
 
 ---
 
-Replace any ":question:" below with information about your pull request.
+Replace any "X" below with information about your pull request.
 
-## Pull Request Details
+## Pull request details
 
 Provide details about your pull request and what it adds, fixes, or changes.
 
-:question:
+X
 
-## Breaking Changes
+## Breaking changes
 
 Describe what features are broken by this pull request and why, if any.
 
-:question:
+X
 
-## Issues Fixed
+## Issues fixed
 
 Enter the issue numbers resolved by this pull request below, if any.
 
-1. :question:
+1. X
 
-## Other Relevant Information
+## Other relevant information
 
 Provide any other important details below.
 
-:question:
+X
 
 [1]: https://github.com/{owner}/{repo}/pulls
 [2]: https://github.com/{owner}/{repo}/blob/master/.github/CONTRIBUTING.md#code-style

@@ -2,6 +2,8 @@
 
 > Good template for GitHub's ISSUE_TEMPLATE.md, CONTRIBUTING.md, and PULL_REQUEST_TEMPLATE.md files.
 
+[![Build Status](https://travis-ci.org/tylucaskelley/github-templates.svg?branch=master)](https://travis-ci.org/tylucaskelley/github-templates)
+
 ---
 
 ## Installation

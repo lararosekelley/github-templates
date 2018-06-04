@@ -6,11 +6,11 @@ All notable changes to this project will be documented in this file. The format 
 
 ---
 
-## [Unreleased](https://github.com/tylucaskelley/github-templates/compare/1.1.0...HEAD)
+## [Unreleased](https://github.com/tylucaskelley/github-templates/compare/1.1.1...HEAD)
 
 - N/A
 
-## [1.1.0](https://github.com/tylucaskelley/github-templates/releases/tag/1.1.0) - 2018-06-03
+## [1.1.1](https://github.com/tylucaskelley/github-templates/releases/tag/1.1.1) - 2018-06-03
 
 ### Changed
 

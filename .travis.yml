@@ -1,4 +1,9 @@
 language: node_js
+    - 10
+    - 9
+    - 8
+    - 7
+    - 6
 before_install:
     - sudo add-apt-repository ppa:duggan/bats --yes
     - sudo apt-get update -qq
